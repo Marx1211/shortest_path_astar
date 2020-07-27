@@ -14,9 +14,9 @@ class Node:
     #This method will calculate the g value
     def get_g(self):
         return self.parent.g + sqrt((self.x - self.parent.x)**2 + (self.y - self.parent.y)**2)
-
+    #This method will calculate the h value
     def get_h(self, end):
         return sqrt((self.x - self.y)**2 + (end.x - end.y)**2)
-
+    #This method will calculate the f value
     def get_f(self):
         return self.g + self.h
