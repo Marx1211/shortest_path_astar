@@ -2,11 +2,12 @@ from math import sqrt
 
 class Node:
 
-    def __init__(self, index, x, y, parent = None):
-        self.index = index          #Node number
+    def __init__(self, x, y, parent = None, children = None):
         self.x = x                  #X coordinate
         self.y = y                  #Y coordinate
         self.parent = parent        #Shortest path parent
+        if children is None:        #Current node's children
+            self.children = []
         self.f = 0                  #Total cost of the node
         self.g = 0                  #Distance to the start node
         self.h = 0                  #Estimated distance to end node

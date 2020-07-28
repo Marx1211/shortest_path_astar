@@ -1,2 +1,10 @@
 #Input files for the coursework
-.cav
+*.cav
+
+#Files to check the output
+*.docx
+
+#VS files
+__pycache__/
+*.pyc
+.vs/
